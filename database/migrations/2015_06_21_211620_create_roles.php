@@ -26,7 +26,7 @@ class CreateRoles extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('users');
+		Schema::drop('roles');
 	}
 
 }
