@@ -12,7 +12,11 @@ class CreateRoles extends Migration {
 	 */
 	public function up()
 	{
-		//
+		$table->increments('id');
+		$table->string('nombre');
+		$table->string('descripcion')
+		$table->timestamp('created_at');
+		$table->timestamp('uploated_at');
 	}
 
 	/**
@@ -22,7 +26,7 @@ class CreateRoles extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('users');
 	}
 
 }
